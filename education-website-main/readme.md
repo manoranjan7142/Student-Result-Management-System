@@ -23,7 +23,7 @@ This is a HTML5 Responsive site template suitable for Courses, colleges, Worksho
 .
 .
 
-[![Nihory - Portfolio site template live demo](https://i.ibb.co/vwN8cgW/live-demo.png)](https://education-atulcodex.netlify.app/)
+[![Nihory - Portfolio site template live demo](https://i.ibb.co/vwN8cgW/live-demo.png)](https://rkmanoj2089.000webhostapp.com)
 .
 .
 .
