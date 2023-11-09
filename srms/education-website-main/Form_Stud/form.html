@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+	
+}
+
+h1 {
+    text-align: center;
+	background: radial-gradient(ellipse at buttom,#1b2735 0%,#090a0f 100%);
+    color: #ffffff;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid #a1f632;
+    border-radius: 15px;
+    background-color: #388476;
+	
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form:hover{
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+form label {
+    width: 30%;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: white;;
+}
+
+form input,
+form textarea,
+form select {
+    width: 65%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+}
+
+
+form select {
+    height: 40px;
+}
+
+form input[type="submit"] {
+    background-color: #3dfc40;
+    color: #1a0101;
+    cursor: pointer;
+    width: 130%;
+    border-radius: 15px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #26f0f7;
+    color: black;
+}
+
+form input[type="file"] {
+    display: none;
+}
+
+form label[for="picture"] {
+    background-color: #ff201d;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 15px;
+    width: 130px;
+    cursor: pointer;
+}
+
+form label[for="picture"]:hover {
+    background-color: #3dfc40;
+    color: black;
+    border-radius: 12px;
+}
+
+/* Optional: Style for displaying the selected file name */
+#file-label {
+    display: block;
+    margin-top: 5px;
+    
+}
+
+/* Optional: Additional styles to make the form more visually appealing */
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 0 5px #043f6f;
+}
+
+
+/* Optional: Responsiveness for smaller screens */
+@media screen and (max-width: 600px) {
+    form label {
+        width: 100%;
+    }
+
+    form input,
+    form textarea,
+    form select {
+        width: 100%;
+    }
+}
+
+</style>
+<body>
+    <h1 class="frnt">Student Registration Form</h1>
+    <form action="submit_handler.php" method="POST" enctype="multipart/form-data">
+        <span>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+        </span>
+        <span>
+            <label for="middle_name">Last Name:</label>
+            <input type="text" id="middle_name" name="middle_name" required>
+        </span>
+        <span></span><label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="" disabled selected>Select Course</option>
+            <option value="Course A">Course A</option>
+            <option value="Course B">Course B</option>
+            <option value="Course C">Course C</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="college_name">College Name:</label>
+        <input type="text" id="college_name" name="college_name" required><br>
+
+        <label for="enrollment_no">Enrollment No:</label>
+        <input type="text" id="enrollment_no" name="enrollment_no" required><br>
+
+        <label for="mobile_number">Mobile Number:</label>
+        <input type="tel" id="mobile_number" name="mobile_number" required><br>
+
+        <label for="college_email">College Email ID:</label>
+        <input type="email" id="college_email" name="college_email" required><br>
+
+
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="picture">Upload Picture:</label>
+            <input type="file" id="picture" name="picture" accept="image/*" onchange="previewImage(event)"><br>
+            <div id="imagePreview"></div>
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+            // JavaScript function to preview the selected image
+            function previewImage(event) {
+                const imagePreview = document.getElementById('imagePreview');
+                const file = event.target.files[0];
+    
+                if (file) {
+                    const reader = new FileReader();
+    
+                    reader.onload = function () {
+                        const img = document.createElement('img');
+                        img.src = reader.result;
+                        imagePreview.innerHTML = '';
+                        imagePreview.appendChild(img);
+                    }
+    
+                    reader.readAsDataURL(file);
+                } else {
+                    imagePreview.innerHTML = '';
+                }
+            }
+        </script>
+    </form>
+</body>
+</html>

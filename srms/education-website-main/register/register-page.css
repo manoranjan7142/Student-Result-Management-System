@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Form Continer 1 */
+
+.from-continer{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+    background-image: url(../image/student_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    
+}
+
+/* Form Continer 2 */
+
+.center-form{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.600);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Main Form Center */
+
+.main-form{
+    width: 450px;
+    height: 570px;
+    background-color: rgb(255, 255, 255);
+    /* background-image: url(./image/student_1.jpg) ; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* border: 2px solid black; */
+    /* box-shadow: 0px 0px 13px 3px rgb(27, 28, 27); */
+
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+    box-shadow: 1px 1px 5px 5px rgb(16, 37, 40);
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    padding-top: 25px;
+    padding-right: 50px;
+    
+}
+
+
+
+/* Main Form h2 */
+
+.main-form h2{
+    padding-bottom: 25px;
+    text-align: center;
+    margin-left: 23px;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0px 0px 4px rgb(236, 239, 236);
+    color: rgb(20, 21, 20);
+    font-family: 'Caprasimo', cursive !important;
+
+}
+
+/* Main Form P */
+
+.main-form p{
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 10px;
+   
+}
+
+.main-form p a{
+    text-decoration: none;
+}
+
+/* input Fileds */
+
+.input input {
+    padding: 7px;
+    width: 90%;
+    padding-left: 70px;
+    margin: 10px;
+    /* box-shadow: 0px 0px 4px 2px rgb(149, 6, 6); */
+    border-radius: 3px;
+    border-bottom: 1px solid black;
+    
+    
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]
+{
+    border: none;
+    border: 2px solid rgba(17, 150, 137, 0.758);
+    
+}
+
+
+
+
+
+/* input Class */
+
+.input{
+    padding-left: 70px;
+}
+
+/* Button CSS */
+
+.button{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    padding: 7px;
+    background-color: rgb(10, 72, 137);
+    /* border-radius: 40px; */
+    border-radius: 2px;
+    border: 1px solid rgb(96, 198, 198);
+    /* box-shadow: 1px 1px 2px 5px rgba(85, 76, 76, 0.369); */
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    
+    /* font-weight: bold; */
+    font-size: 16px;
+    padding-left: 98px;
+    padding-right: 98px;
+    margin-left: 53px;
+    color: #fff;
+}
+
+button:hover{
+    background-color: rgb(255, 0, 123);
+    box-shadow: 1px 1px 5px 3px rgb(201, 207, 201);
+    cursor: pointer;
+}
+/* Font Icons Used  */
+
+/* .fa-regular{
+    padding: 5px;
+    padding-left: 20px;
+    padding-top: 10px;
+    position: absolute;
+    margin: 10px;
+    color: rgba(17, 150, 137, 0.758);
+    border-right: 2px solid rgba(17, 150, 137, 0.758);
+    width: 50px;
+    height: 37px;
+    background-color: black;
+} */
+
+.fa-solid{
+    padding: 5px;
+    padding-left: 20px;
+    padding-top: 10px;
+    position: absolute;
+    margin: 10px;
+    color: rgba(17, 150, 137, 0.758);
+    border-right: 2px solid rgba(17, 150, 137, 0.758);
+    width: 50px;
+    height: 37px;
+    background-color: black;
+    
+}
+
+
+/* Resigster Form */
+
+.register{
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 17px;  
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+.register p{
+    font-size: 12px;
+    margin-left: 35px;
+    margin-top: 15px;
+}
+

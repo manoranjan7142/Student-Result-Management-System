@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Design</title>
+    
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    flex: 0 0 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+.sidebar img {
+    
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    
+}
+
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.anvigation ul li{
+    color: aqua;
+    background-color: blanchedalmond;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.main-content h1 {
+    color: #333;
+}
+
+.main-content p {
+    color: #666;
+}
+table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+</style>
+<body>
+    
+    <div class="dashboard">
+        <div class="sidebar">
+            <!-- Sidebar content goes here -->
+            
+                <img src="Parul2.png" class="logo" alt="">
+        
+                <div class="navigation">
+                    <ul>
+                        <i id="menu-close" class="fas fa-times"></i>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Results</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        
+                        <span><li><a href="sign-up.html">Login</a></li></span>
+                    </ul>
+                    <img src="img/menu.png" id="menu-btn" alt="">
+                </div>
+            
+        </div>
+        <div class="main-content">
+            <!-- Main content goes here -->
+            <h1>Welcome to the Dashboard</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu quam sed mi feugiat accumsan.</p>
+        
+        <h1>Student Details</h1>
+            <table>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Course</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>John Doe</td>
+                    <td>20</td>
+                    <td>Computer Science</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Jane Smith</td>
+                    <td>22</td>
+                    <td>Engineering</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Michael Johnson</td>
+                    <td>19</td>
+                    <td>Mathematics</td>
+                    <td>A-</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </table>
+        </div>
+    </div>
+</body>
+</html>
